@@ -7,23 +7,23 @@
 
 ## Para poder executar aplicação a partir da imagem no Docker Hub com profile "dev"
 
-
+```
   docker pull beassad/fiap-checkpoint1:latest
   docker run -p 8080:8080 -e "PROFILE=dev" beassad/fiap-checkpoint1
-
+```
 
 ## Para poder executar aplicação a partir da imagem no Docker Hub com profile "stg"
 
-
+```
 docker pull beassad/fiap-checkpoint1:latest
 docker run -p 8080:8080 -e "PROFILE="stg" beassad/fiap-checkpoint1
-
+```
 
 ## Para poder executar aplicação a partir da imagem no Docker Hub com profile "prd"
 
-
+```
 docker pull beassad/fiap-checkpoint1:latest
 docker run -p 8080:8080 -e "PROFILE="prd" beassad/fiap-checkpoint1
-
+```
 
 Após isso, basta ir no navegador, e procurar http:localhost:8080/ping
